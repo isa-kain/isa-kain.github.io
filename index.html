@@ -100,14 +100,15 @@
 
 							<p>
 								<b>Education:</b>
-								Currently I am an undergraduate at Northeastern University studying physics.
+								Currently I am a fourth-year undergraduate at Northeastern University majoring in physics,
+								with minors in math and geology.
 							</p>
 
 							<p>
 								<b>Research Interests:</b>
 								I am broadly interested in observational exoplanet astronomy, and enjoy a blended approach of
 								both science and engineering. On the science side, my previous work
-								was with characterising planet migration and system dynamics from transit photometry. On
+								has included characterising planet migration and system dynamics from transit photometry. On
 								the engineering side, I have worked on systems engineering to support exoplanet imaging missions,
 								including the Orbiting Starshade and Orbiting Configurable Artificial Star (ORCAS) missions.
 							</p>
@@ -184,7 +185,7 @@
 						<article id="community">
 							<h2 class="major">Community</h2>
 							<span class="image main">
-								<img src="images/pic03.jpg" alt=""/>
+								<img src="images/advent.jpg" alt=""/>
 							</span>
 
 							<p>
@@ -286,17 +287,39 @@
 								<img src="images/CMS.jpg" alt=""/>
 							</span>
 							<p>
-								<b>Summary</b> <br>
-								The H4 DAQ is a data acquisition framework built specifically for testing
-								prototype electronics and calorimeters using the SPS test beam. This setup has
-								been used at the 904 lab at the North Area of CERN at the Prevessin site. In
-								this setup, particles arrive from the SPS test beam and pass through an
-								alternating array of five hodoscopes and plastic scintillators, then through
-								the test calorimeter, where the scintillation data is read by a VFE and FE array.
-								Triggers from the hodoscopes and scintillators, warning signals from the SPS, and
-								busy signals from the VFEs and FEs are fed into the trigger board, a CAEN DT 5495
-								multiple-FPGA unit, where an acquisition decision is made and passed to the
-								run-control software.
+								<b>Background:</b> <br>
+								The European Organization for Nuclear Research (CERN) runs dozens of particle physics
+								experiments, among them the Compact Muon Solenoid (CMS) experiment. CMS is one of the
+								experiments served by the Large Hadron Collider (LHC), and is one of two detectors which
+								presented the first results for the Higgs boson. I worked on the electromagnetic
+								calorimeter (ECAL) detector, one of several layers of detectors present in CMS.
+								<br>
+								The LHC periodically goes through long shutdown periods of 2 years, during which time
+								the luminosity (corresponding to the energy of the proton-proton collisions) of the
+								beamline is upgraded. To keep up with increased luminosity and combat degradation of
+								the detector components due to extreme radiation, the experiments along the LHC’s beamline
+								are upgraded as well. Worn electronics and detector components are ripped out and either
+								replaced or upgraded.
+							</p>
+							<p>
+								<b>Description of work:</b> <br>
+								These new electronics need to be tested before they’re installed. This is where my work was
+								focused: on developing a test environment for new electronics and calorimeters for the CMS ECAL.
+								I worked with Dr. Giacomo Cucciati to develop H4DAQ, a data acquisition software which will be used
+								at the H4 site along the SPS test beam. In this setup, particles arrive from the SPS test beam and
+								pass through an alternating array of five hodoscopes and plastic scintillators, then through the test
+								calorimeter, where the scintillation data is read by a VFE and FE array. Triggers from the hodoscopes
+								and scintillators, warning signals from the SPS, and busy signals from the VFEs and FEs are fed into the
+								trigger board, a CAEN DT 5495 multiple-FPGA unit, where an acquisition decision is made and passed to
+								the run-control software.
+								<br>
+								During later iterations of this project, a VICE++ board was introduced for testing prototype VFE and FE
+								boards. The full ECAL setup includes a data source (either photons from scintillation in a physical
+								calorimeter, or simulated data), at least one full set of 5 VFE cards, at least one FE card per VFE set,
+								and a complicated array of other electronics that are part of the data acquisition framework. The VICE++
+								allows the cards being tested to be decoupled from the rest of the DAQ framework and from each other,
+								so that one can test any combination of VFE and FE cards (including if some, or all, of one type of
+								card is missing). 
 							</p>
 						</article>
 
