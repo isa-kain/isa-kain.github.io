@@ -60,6 +60,29 @@
 									<!-- Note you will want to change where this points to! -->
 									<a href="docs/Kain_CV_grad.pdf" target="_blank">Curriculum Vitae</a>
 								</p>
+								<p>
+									<!-- 	Here are the fancy icons that link to your social media.
+										These icons are rendered using Font Awesome fonts, and you can find more icons
+										here: https://fontawesome.com/icons
+									-->
+									<ul class="icons">
+										<li>
+											<a href="mailto:ijkain@ucsc.edu" class="icon fa-envelope">
+												<span class="label">Email</span>
+											</a>
+										</li>
+										<li>
+											<a href="https://github.com/isa-kain/" class="icon fa-github">
+												<span class="label">GitHub</span>
+											</a>
+										</li>
+										<li>
+											<a href="https://twitter.com/exo__isa" class="icon fa-twitter">
+												<span class="label">Twitter</span>
+											</a>
+										</li>
+									</ul>	
+								</p>
 							</div>
 						</div>
 						<!-- This is the navigation menu -->
@@ -76,15 +99,9 @@
 								<li>
 									<a href="#community">Outreach</a>
 								</li>
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
 								<!-- 	You can add another button to your navigation menu by adding
 									another List Item with a link inside of it.
 								-->
-								<!-- <li>
-									<a href="images/Astronomy.jpg">My CV</a>
-								</li> -->
 							</ul>
 						</nav>
 					</header>
@@ -214,39 +231,6 @@
 
 						</article>
 
-						<article id="contact">
-							<h2 class="major">Contact</h2>
-							<p>
-								<b>Email:</b>  ijkain@ucsc.edu
-							</p>
-
-							<!-- 	Here are the fancy icons that link to your social media.
-								These icons are rendered using Font Awesome fonts, and you can find more icons
-								here: https://fontawesome.com/icons
-							-->
-							<ul class="icons">
-								<!-- The Twitter icon -->
-								<!-- <li>
-									<a href="https://twitter.com/exo__isa" class="icon fa-twitter">
-										<span class="label">Twitter</span>
-									</a>
-								</li> -->
-								<!-- The GitHub icon -->
-								<li>
-									<a href="https://github.com/isa-kain/" class="icon fa-github">
-										<span class="label">GitHub</span>
-									</a>
-								</li>
-								<!-- The Email icon -->
-								<li>
-									<a href="mailto:ijkain@ucsc.edu" class="icon fa-envelope">
-										<span class="label">Email</span>
-									</a>
-								</li>
-
-							</ul>
-						</article>
-
 
 						<!-- RESEARCH PROJECT CARDS-->
  						<article id="scales">
@@ -277,115 +261,6 @@
 								<a href="docs/K225-poster.pdf" target="_blank">Label</a>
 							</p>
 						</article>
-<!-- 						<article id="k2">
-							<a href="#research" class="button back black"><span></span>Back</a> <p></p>
-							<h2 class="major">Investigating the Hot Neptune K2-25b:</h2>
-							<h3 class="major">Transit timing variations (TTVs) as insight into dynamical history</h2>
-							<span class="image main">
-								<img src="images/exo1.jpg" alt=""/>
-							</span>
-							<p>
-								<b>Summary</b> <br>
-							</p>
-							<p>
-								<!-- Note you will want to change where this points to! -->
-								<a href="docs/K225-poster.pdf" target="_blank">Poster presented at 233rd AAS Meeting</a>
-							</p>
-						</article>
-
-						<article id="orcas">
-							<a href="#research" class="button back black"><span></span>Back</a> <p></p>
-							<h2 class="major">Orbiting Configurable Artificial Star (ORCAS)</h2>
-							<span class="image main">
-								<img src="images/AO.jpg" alt=""/>
-							</span>
-							<p>
-								<b>Summary</b> <br>
-
-
-							</p>
-							<p>
-								<!-- Note you will want to change where this points to! -->
-								<a href="docs/ORCAS-poster.pdf" target="_blank">NASA Summer Intern Poster Session</a>
-							</p>
-						</article>
-
-						<article id="h4daq">
-							<a href="#research" class="button back black"><span></span>Back</a> <p></p>
-							<h2 class="major">Testing Electronic Prototypes for the Compact Muon Solenoid (CMS)</h2>
-							<span class="image main">
-								<img src="images/CMS.jpg" alt=""/>
-							</span>
-							<p>
-								<b>Background:</b> <br>
-								The European Organization for Nuclear Research (CERN) runs dozens of particle physics
-								experiments, among them the Compact Muon Solenoid (CMS) experiment. CMS is one of the
-								experiments served by the Large Hadron Collider (LHC), and is one of two detectors which
-								presented the first results for the Higgs boson. I worked on the electromagnetic
-								calorimeter (ECAL) detector, one of several layers of detectors present in CMS.
-								<br>
-								The LHC periodically goes through long shutdown periods of 2 years, during which time
-								the luminosity (corresponding to the energy of the proton-proton collisions) of the
-								beamline is upgraded. To keep up with increased luminosity and combat degradation of
-								the detector components due to extreme radiation, the experiments along the LHC’s beamline
-								are upgraded as well. Worn electronics and detector components are ripped out and either
-								replaced or upgraded.
-							</p>
-							<p>
-								<b>Description of work:</b> <br>
-								These new electronics need to be tested before they’re installed. This is where my work was
-								focused: on developing a test environment for new electronics and calorimeters for the CMS ECAL.
-								I worked with Dr. Giacomo Cucciati to develop H4DAQ, a data acquisition software which will be used
-								at the H4 site along the SPS test beam. In this setup, particles arrive from the SPS test beam and
-								pass through an alternating array of five hodoscopes and plastic scintillators, then through the test
-								calorimeter, where the scintillation data is read by a VFE and FE array. Triggers from the hodoscopes
-								and scintillators, warning signals from the SPS, and busy signals from the VFEs and FEs are fed into the
-								trigger board, a CAEN DT 5495 multiple-FPGA unit, where an acquisition decision is made and passed to
-								the run-control software.
-								<br>
-								During later iterations of this project, a VICE++ board was introduced for testing prototype VFE and FE
-								boards. The full ECAL setup includes a data source (either photons from scintillation in a physical
-								calorimeter, or simulated data), at least one full set of 5 VFE cards, at least one FE card per VFE set,
-								and a complicated array of other electronics that are part of the data acquisition framework. The VICE++
-								allows the cards being tested to be decoupled from the rest of the DAQ framework and from each other,
-								so that one can test any combination of VFE and FE cards (including if some, or all, of one type of
-								card is missing). 
-							</p>
-						</article>
-
-						<!-- <article id="asteria">
-							<a href="#research" class="button back black"><span></span>Back</a> <p></p>
-							<h2 class="major">ASTERIA</h2>
-							<span class="image main">
-								<img src="images/exo2.jpg" alt=""/>
-							</span>
-							<p>
-								<b>TEXT</b>
-							</p>
-						</article>
-
-						<article id="mdot">
-							<a href="#research" class="button back black"><span></span>Back</a> <p></p>
-							<h2 class="major">mDOT</h2>
-							<span class="image main">
-								<img src="images/exo2.jpg" alt=""/>
-							</span>
-							<p>
-								<b>TEXT</b>
-							</p>
-						</article>
-
-						<article id="gpi">
-							<a href="#research" class="button back black"><span></span>Back</a> <p></p>
-							<h2 class="major">GPI</h2>
-							<span class="image main">
-								<img src="images/exo2.jpg" alt=""/>
-							</span>
-							<p>
-								<b>TEXT</b>
-							</p>
-						</article> --> -->
-
 					</div>
 
 					<footer id="footer">
